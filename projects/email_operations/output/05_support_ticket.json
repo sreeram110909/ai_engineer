@@ -1,0 +1,10 @@
+{
+    "sender_email": null,
+    "subject": "Login Issue",
+    "summary": "The user is unable to log into their account after resetting the password. The website shows an \"Invalid Credentials\" error. The user requests help to resolve the issue.",
+    "category": "Support",
+    "priority": null,
+    "action_required": "Help resolve login issue",
+    "deadline": null,
+    "sentiment": "Neutral"
+}

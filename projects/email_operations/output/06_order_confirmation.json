@@ -1,0 +1,10 @@
+{
+    "sender_email": null,
+    "subject": "Order Confirmation",
+    "summary": "The email confirms the customer's purchase. It provides the order number #54892 and states it will be shipped within two business days.",
+    "category": "Shopping",
+    "priority": null,
+    "action_required": null,
+    "deadline": null,
+    "sentiment": "Positive"
+}

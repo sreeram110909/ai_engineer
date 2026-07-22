@@ -1,0 +1,10 @@
+Subject: Invoice Payment Reminder
+
+Hello,
+
+This is a reminder that Invoice #2048 for $1,250 is due on August 5.
+
+Please process the payment at your earliest convenience.
+
+Best,
+Finance Team

@@ -1,0 +1,10 @@
+{
+    "sender_email": null,
+    "subject": "Application for Software Engineer",
+    "summary": "The sender is applying for the Software Engineer position. They mention experience with Python, FastAPI, and LLM applications. Their resume is attached for review. They thank the hiring manager.",
+    "category": "Job",
+    "priority": "Medium",
+    "action_required": "Review resume",
+    "deadline": null,
+    "sentiment": "Positive"
+}

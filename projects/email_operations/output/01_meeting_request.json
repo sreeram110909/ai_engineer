@@ -1,0 +1,10 @@
+{
+    "sender_email": null,
+    "subject": "Project Kickoff Meeting",
+    "summary": "Rahul proposes a project kickoff meeting on Wednesday at 10:00 AM in Conference Room B. The meeting will cover timelines, milestones, and responsibilities. Recipients are asked to confirm their availability.",
+    "category": "Work",
+    "priority": "Medium",
+    "action_required": "Confirm availability.",
+    "deadline": "Wednesday at 10:00 AM",
+    "sentiment": "Neutral"
+}

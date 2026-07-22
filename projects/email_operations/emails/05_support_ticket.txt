@@ -1,0 +1,10 @@
+Subject: Login Issue
+
+Hi Support,
+
+I am unable to log into my account after resetting my password. The website displays an "Invalid Credentials" error.
+
+Please help resolve this issue.
+
+Thanks,
+Rohan

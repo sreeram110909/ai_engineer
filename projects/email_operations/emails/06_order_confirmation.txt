@@ -1,0 +1,8 @@
+Subject: Order Confirmation
+
+Dear Customer,
+
+Thank you for your purchase. Your order #54892 has been confirmed and will be shipped within two business days.
+
+Regards,
+Sales Team

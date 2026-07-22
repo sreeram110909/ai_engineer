@@ -1,0 +1,10 @@
+{
+    "sender_email": null,
+    "subject": "Interview Invitation",
+    "summary": "The email invites the candidate to a technical interview. The interview is scheduled for Friday at 2:00 PM via Google Meet. The recipient is asked to reply to confirm availability.",
+    "category": "Job",
+    "priority": "Medium",
+    "action_required": "Confirm availability by replying",
+    "deadline": "Friday at 2:00 PM",
+    "sentiment": "Positive"
+}

@@ -1,0 +1,10 @@
+{
+    "sender_email": null,
+    "subject": "Monthly Product Updates",
+    "summary": "The Product Team announced new features for this month. They introduced AI-powered search, faster response times, and improved analytics dashboards.",
+    "category": "Promotion",
+    "priority": "Low",
+    "action_required": null,
+    "deadline": null,
+    "sentiment": "Positive"
+}

@@ -1,0 +1,10 @@
+{
+    "sender_email": null,
+    "subject": "Invoice Payment Reminder",
+    "summary": "The email reminds that Invoice #2048 for $1,250 is due on August 5. It asks the recipient to process the payment at their earliest convenience.",
+    "category": "Finance",
+    "priority": null,
+    "action_required": "Process the payment for Invoice #2048",
+    "deadline": "August 5",
+    "sentiment": "Neutral"
+}

@@ -1,0 +1,13 @@
+Subject: Meeting Minutes
+
+Hi Everyone,
+
+Today's meeting covered API integration, testing timelines, and deployment planning.
+
+Action Items:
+- Complete API integration by Friday.
+- Prepare test cases.
+- Review deployment checklist.
+
+Thanks,
+Project Manager

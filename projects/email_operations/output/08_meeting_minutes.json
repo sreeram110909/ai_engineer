@@ -1,0 +1,10 @@
+{
+    "sender_email": null,
+    "subject": "Meeting Minutes",
+    "summary": "The meeting discussed API integration, testing timelines, and deployment planning. The email lists three action items: complete API integration by Friday, prepare test cases, and review the deployment checklist.",
+    "category": "Work",
+    "priority": "Medium",
+    "action_required": "Complete API integration by Friday; Prepare test cases; Review deployment checklist",
+    "deadline": "Friday",
+    "sentiment": "Neutral"
+}
