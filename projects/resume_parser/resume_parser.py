@@ -17,37 +17,62 @@ model = "openai/gpt-oss-120b"
 
 
 job_description = f"""
-Description
-Do you want to solve real customer problems through innovative technology? Do you enjoy working on scalable services in a collaborative team environment? Do you want to see your code directly impact millions of customers worldwide?
+Job description
 
-At Amazon, we hire the best minds in technology to innovate and build on behalf of our customers. Customer obsession is part of our company DNA, which has made us one of the world's most beloved brands.
+Hi there,
 
-Our Software Development Engineers (SDEs) use modern technology to solve complex problems while seeing their work's impact first-hand. The challenges SDEs solve at Amazon are meaningful and influence millions of customers, sellers, and products globally. We seek individuals passionate about creating new products, features, and services while managing ambiguity in an environment where development cycles are measured in weeks, not years.
 
-At Amazon, we believe in ownership at every level. As an SDE-I, you'll own the entire lifecycle of your code - from design through deployment and ongoing operations. This ownership mindset, combined with our commitment to operational excellence, ensures we deliver the highest quality solutions for our customers.
+Overview Research Analyst (STEM Domains – AI Evaluation)
 
-We're looking for curious minds who think big and want to define tomorrow's technology. At Amazon, you'll grow into the high-impact engineer you know you can be, supported by a culture of learning and mentorship. Every day brings exciting new challenges and opportunities for personal growth.
-Key job responsibilities
-• Collaborate and communicate effectively with experienced cross-disciplinary Amazonians to design, build, and operate innovative products and services that delight our customers, while participating in technical discussions to drive solutions forward.
-• Design and develop scalable solutions using cloud-native architectures and microservices in a large distributed computing environment.
-• Participate in code reviews and contribute to technical documentation.
-• Build and maintain resilient distributed systems that are scalable, fault-tolerant, and cost-effective.
-• Leverage and contribute to the development of GenAI and AI-powered tools to enhance development productivity while staying current with emerging technologies.
-• Write clean, maintainable code following best practices and design patterns.
-• Work in an agile environment practicing CI/CD principles while participating in operational responsibilities including on-call duties.
-• Demonstrate operational excellence through monitoring, troubleshooting, and resolving production issues.
-Basic Qualifications
-- Experience with at least one general-purpose programming language such as Java, Python, C++, C#, Go, Rust, or TypeScript
-- Experience with data structure implementation, basic algorithm development, and/or object-oriented design principles
-- Currently has, or is in the process of obtaining a bachelor’s degree in Computer Science, Computer Engineering, Data Science, Information Systems, or related STEM fields
-- Must be 18 years of age of older
+This is a remote, short-term AI evaluation research role focused on creating high-quality research and evaluation data for advanced AI systems.
+
+The selected candidates will research scientific and technical information from reliable public sources, such as research papers, government databases, statistical repositories, and technical documentation. They will then create complex, multi-step questions with objectively verifiable answers, validate the information using multiple sources, and document the complete research process.
+
+
+About the Role
+
+We are engaged in the development of high-quality evaluation data for advanced AI systems, in partnership with a leading global AI research organisation.
+We are hiring Research Analysts for our STEM stream to author complex, source-verified research questions across scientific, technological, medical, and financial subject areas.
+This is a rigorous, detail-oriented research position. Analysts are responsible for the end-to-end production of research tasks: identifying verifiable facts in public sources, constructing original multi-step research questions, and documenting the verification process to auditable standards.
+
+Key Responsibilities
+
+Conduct in-depth research across publicly available sources, including peer-reviewed publications, regulatory and government databases, statistical repositories, and technical documentation.
+Author original, multi-step research questions with a single, objectively verifiable answer, in accordance with internal quality specifications.
+Verify all factual claims against multiple independent, publicly accessible sources prior to submission.
+Produce complete documentation of the research and verification process for internal review.
+Meet defined quality, accuracy, and throughput standards, completing each assignment in full before commencing the next.
+Adhere to all project protocols, quality checklists, and confidentiality requirements.
+
+Required Qualifications
+
+Bachelor's degree (completed or final year) in engineering, the sciences, mathematics, medicine, pharmacy, or economics from a recognized institution;
+Candidates from premier institutions (IIT, NIT, BITS, IISc, AIIMS, or equivalent) are strongly encouraged to apply.
+Demonstrated ability to read and accurately interpret technical material research papers, statistical tables, datasets, and regulatory documents.
+Excellent written English, with the ability to draft precise, unambiguous analytical prose.
+Strong attention to detail and a disciplined, process-driven working style.
+Full-time availability; own laptop and reliable high-speed internet connection.
+
 Preferred Qualifications
-- Experience from previous technical internship(s) or demonstrated project experience
-- Experience with one or more of the following: AI tools for development productivity, Cloud platforms (preferably AWS), Database systems (SQL and NoSQL), Contributing to open-source projects, Version control systems, Debugging and troubleshooting complex systems
-- Demonstrated ability to learn and adapt to new technologies quickly
-- Basic understanding of software development lifecycle (SDLC)
-- Strong problem-solving and analytical skills
-- Excellent written and verbal communication skills
+
+Postgraduate degree (M.Tech, M.Sc, MBBS, M.Pharm, MA Economics, or equivalent) in a relevant discipline.
+Prior experience in academic research, scientific writing, data analysis, fact-checking, or technical editing.
+Participation in olympiads, research fellowships, or comparable merit-based programs has context menu
+
+Offer Details:
+
+
+Role: Research Analyst STEM Domains (AI Evaluation)
+
+Project Duration: 2 - 3 Months
+
+Location: Remote
+
+Department: Research Operations
+
+Working Hours: 9 AM to 6 PM IST (Minimum 4 Hrs per day)
+
+
 """
 
 class jobD(BaseModel):
