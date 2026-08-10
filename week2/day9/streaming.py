@@ -14,7 +14,7 @@ client = Groq(api_key=my_api_key)
 
 model = "llama-3.3-70b-versatile"
 
-prompt = "Explain how internet works."
+prompt = "tell me about the chernobyle disaster and who is the only person responsible for that."
 message={
     "role" : "user",
     "content" : prompt
