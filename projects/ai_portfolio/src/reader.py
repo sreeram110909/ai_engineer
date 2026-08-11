@@ -1,9 +1,10 @@
 from pathlib import Path
+from typing import BinaryIO
 from pypdf import PdfReader
 
 
-def read_pdf(file_path: Path | str) -> str:
-    """Extracts text content from all pages of a PDF file."""
+def read_pdf(file_path: Path | str | BinaryIO) -> str:
+    """Extracts text content from all pages of a PDF file or binary stream."""
     reader = PdfReader(file_path)
     text = ""
     for page in reader.pages:

@@ -135,7 +135,7 @@ def chatwith_resume(resume: Resume | str):
             else:
                 exp_status = "✓ No minimum experience required"
 
-            edu_status = "✓ Requirement met" if current_match.education_match else "• Review required"
+            edu_status = "✓ Requirement met" if (current_match and getattr(current_match, "education_match", False)) else "• Review required"
             print(f"  • Experience Criteria: {exp_status}")
             print(f"  • Education Criteria:  {edu_status}")
 
@@ -150,40 +150,55 @@ def chatwith_resume(resume: Resume | str):
         # --------------------------------------------------
         current_context = ""
         if current_jd is not None:
+            # If current_match is not yet computed, compute it if resume_obj is available
+            if current_match is None and resume_obj is not None:
+                try:
+                    current_match = calculate_match(resume_obj, current_jd)
+                except Exception:
+                    current_match = None
+
+            jd_str = (
+                current_jd.model_dump_json(indent=2)
+                if hasattr(current_jd, "model_dump_json")
+                else str(current_jd)
+            )
+
+            if current_match is not None and hasattr(current_match, "model_dump_json"):
+                match_str = current_match.model_dump_json(indent=2)
+            elif current_match is not None:
+                match_str = str(current_match)
+            else:
+                match_str = "No match result available"
+
             current_context = f"""
             CURRENT JOB DESCRIPTION:
-            {current_jd.model_dump_json(indent=2)}
+            {jd_str}
 
             CURRENT MATCH RESULT:
-            {current_match.model_dump_json(indent=2)}
+            {match_str}
             """
 
         system_prompt = f"""
-        You are an AI assistant representing the person
-        whose resume is provided below.
+        You are an AI assistant representing Banoth Sree Ram Nayak, whose verified resume is provided below.
 
         CANDIDATE INFORMATION:
         {candidate_info}
 
         {current_context}
 
-        RULES:
-        1. Answer ONLY the recruiter's latest question.
-        2. Treat every new recruiter message as a new question.
-        3. Do not answer previous questions again.
-        4. Do not repeat previous answers.
-        5. Do not combine the current question with previous recruiter questions.
-        6. Answer directly and concisely.
-        7. Never invent information.
-        8. Use only the candidate information provided.
-        9. If the information is unavailable, say:
-           "I don't have that information in Chinnu's portfolio."
-        10. Do not unnecessarily mention unrelated skills.
-        11. If the recruiter asks for a ranking or evaluation, you may make a reasoned assessment using only the evidence in the resume.
-        12. Clearly distinguish an assessment from a factual claim.
-        13. If a current JD exists, use it only when the question is related to that JD.
-        14. Never change the calculated match score.
-        15. Do not repeat the complete JD analysis unless the recruiter explicitly asks for it.
+        RULES & INSTRUCTIONS:
+        1. Answer ONLY the recruiter's latest message directly, concisely, and professionally.
+        2. Ground all factual statements strictly in the candidate information provided. Never invent skills, experience, or qualifications.
+        3. If asked about a specific factual detail not in the resume, state: "I don't have that information in Chinnu's portfolio."
+        4. ROLE SUITABILITY & JOB MATCH EVALUATION:
+           - When the recruiter shares a job description or asks whether Chinnu is a match/fit for a role:
+             a. Provide an explicit assessment of overall fit (e.g. "Strong Match", "Partial Match", or "Not an Immediate Fit / Notable Gaps").
+             b. Clearly highlight **Matching Areas & Strengths** (skills, relevant projects, databases, REST APIs, or foundational coursework that directly align).
+             c. Clearly highlight **Key Gaps & Missing Requirements** (specific required technologies like Java, Ruby on Rails, .NET, Spring MVC, or years of experience that are not in the resume).
+             d. Give an honest summary recommendation on candidate suitability (e.g., whether core strengths in C++, Python, SQL, and CS fundamentals provide transferable value or if deep domain experience in missing stacks is needed).
+        5. If a calculated MATCH RESULT is present in the context, refer to its calculated score and details without altering or inventing scores.
+        6. Clearly distinguish between factual claims from the resume and reasoned suitability assessments.
+        7. Keep answers well-structured and focused on what the recruiter is asking.
         """
 
         response = client.chat.completions.create(

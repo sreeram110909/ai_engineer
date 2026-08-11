@@ -25,8 +25,10 @@ from .matcher import (
     explain_match,
 )
 from .chat import get_user_input, chatwith_resume
+from .api import app
 
 __all__ = [
+    "app",
     "GROQ_API_KEY",
     "MODEL",
     "client",
