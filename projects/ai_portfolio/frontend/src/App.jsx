@@ -4,7 +4,11 @@ import Chat from "./components/Chat";
 import Profile from "./components/Profile";
 import JobAnalysis from "./components/JobAnalysis";
 import SettingsModal from "./components/SettingsModal";
-import { getCandidateProfile, chatWithCandidate, getErrorMessage } from "./api/client";
+import {
+  getCandidateProfile,
+  chatWithCandidate,
+  getErrorMessage,
+} from "./api/client";
 import "./App.css";
 
 const SESSIONS_STORAGE_KEY = "chinnu_ai_chat_sessions";
